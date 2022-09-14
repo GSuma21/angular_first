@@ -1,0 +1,33 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>add user works!</p>
+   
+    <form>
+        <input type="text" name="user" placeholder="enter name" #box1>
+        <button (click)="getValues(box1.value)">Get Data</button>
+
+    </form>
+    <ul *ngFor="let item of list">
+        <p>{{item.id}} : {{item.name}}</p>
+    </ul>
+</body>
+</html> -->
+<br><br><br><br>
+<form #useradd="ngForm" (ngSubmit)="onAddUser(useradd.value)">
+    <input type="text" name="name" ngModel placeholder="name"> <br><br>
+    <input type="text" name="email" ngModel placeholder="email"> <br><br>
+    <input type="text" name="mobile" ngModel placeholder="mobile No"> <br><br>
+    <input type="text" name="addres" ngModel placeholder="addres"> <br><br>
+    <button>Add User</button>
+  
+</form>
+
+

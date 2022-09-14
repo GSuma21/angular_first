@@ -1,0 +1,7 @@
+ng new routingapp
+ cd routingapp
+$ ng generate module app-routing --flat --module=app
+ng g c component_name
+
+
+how to get query parameters from url in angular 8

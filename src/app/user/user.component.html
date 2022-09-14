@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items:center ;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            align-items:center ;
+            text-align: center;
+
+        }
+        .navcontent{
+    display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-items: center;
+
+   }
+
+   .navcontent:hover{
+    display: block;
+    background-color: white;
+  color: rgb(2, 2, 2);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+   }
+    </style>
+</head>
+<body>
+   
+    
+
+    <ul class="content">
+        <a routerLink="/details/ranjitha" class="navcontent" >go to user 1</a>
+        <a routerLink="/details/swapna" class="navcontent" >go to user 2</a>
+        <a routerLink="/details/abc" class="navcontent" >go to user 3</a>
+        <a routerLink="/details/xyz" class="navcontent" >go to user 4</a>
+       
+      </ul>
+       <h3> input form </h3>
+  <br><br> 
+         <input type="text" [(ngModel)]="name" name="name">
+        <button type="button" (click)="navTo()" >click</button>
+   
+</body>
+</html>
+
